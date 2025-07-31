@@ -1,12 +1,12 @@
 <?php
+
+include 'php/noiniciosesion.php';
 include 'php/Header.php';
 include 'php/conexion.php';
 
 // Obtener todas las películas
 $sql = "SELECT * FROM peliculas";
 $result = $conn->query($sql);
-
-
 ?>
   <main class="galeria">
     <?php while ($pelicula = $result->fetch_assoc()): ?>
