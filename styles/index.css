@@ -6,7 +6,9 @@ body {
 }
 
 .header {
-  text-align: left;
+  display: flex; /* FLEX para alinear */
+  justify-content: space-between; /* Título a la izquierda, menú a la derecha */
+  align-items: center; /* Centrar verticalmente */
   padding: 2rem 2rem;
   background-color: var(--fondo-header);
   border-bottom: 1px solid var(--gris-medio);
@@ -16,6 +18,24 @@ body {
   font-size: 2.5rem;
   color: var(--rojo-vibrante);
   text-transform: uppercase;
+  margin: 0; /* quitar margen para mejor alineación */
+}
+
+/* Nuevo estilo para el menú de perfil */
+.menu-perfil a {
+  color: var(--rojo-vibrante);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0.3rem 0.6rem;
+  border: 2px solid var(--rojo-vibrante);
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-perfil a:hover {
+  background-color: var(--rojo-vibrante);
+  color: var(--blanco);
 }
 
 .galeria {

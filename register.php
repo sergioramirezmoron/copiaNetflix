@@ -1,5 +1,4 @@
 <?php
-session_start();
 include 'php/conexion.php';
 include 'php/Header.php';
 
@@ -42,11 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
-<header class="header">
-    <h1>Registro</h1>
-</header>
-
 <main class="registro-container">
     <?php if ($error): ?>
         <p class="error"><?php echo htmlspecialchars($error); ?></p>

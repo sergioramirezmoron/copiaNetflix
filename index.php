@@ -8,9 +8,6 @@ $result = $conn->query($sql);
 
 
 ?>
-        <header class="header">
-            <h1>Catálogo de Películas</h1>
-        </header>
   <main class="galeria">
     <?php while ($pelicula = $result->fetch_assoc()): ?>
       <div class="pelicula">
