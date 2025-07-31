@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 // Obtengo el nombre del archivo actual, sin ruta
 $current_page = basename($_SERVER['PHP_SELF']);
 
@@ -14,7 +12,6 @@ $titulos = [
 ];
 
 $titulo_actual = $titulos[$current_page] ?? 'Mi Aplicación'; // título por defecto
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -30,9 +27,18 @@ $titulo_actual = $titulos[$current_page] ?? 'Mi Aplicación'; // título por def
   <?php if($current_page === 'login.php'): ?>
     <link rel="stylesheet" href="styles/login.css" />
   <?php endif; ?>
+  <link rel="stylesheet" href="styles/perfil.css" />
 </head>
 <body>
 <header class="header">
+  <?php if (isset($_SESSION['usuario_id'])): ?>
+    <a href="index.php" class="logo-link" title="Inicio">
+      <img src="/images/netflix.jpg" alt="Netflix Logo" class="logo" />
+    </a>
+  <?php else: ?>
+    <img src="/images/netflix.jpg" alt="Netflix Logo" class="logo" />
+  <?php endif; ?>
+
   <h1><?php echo htmlspecialchars($titulo_actual); ?></h1>
 
   <?php if (isset($_SESSION['usuario_nombre'])): ?>

@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include 'php/noiniciosesion.php';
 include 'php/Header.php';
 include 'php/conexion.php';

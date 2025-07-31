@@ -7,11 +7,20 @@ body {
 
 .header {
   display: flex; /* FLEX para alinear */
-  justify-content: space-between; /* Título a la izquierda, menú a la derecha */
   align-items: center; /* Centrar verticalmente */
   padding: 2rem 2rem;
   background-color: var(--fondo-header);
   border-bottom: 1px solid var(--gris-medio);
+}
+
+.logo {
+  height: 3rem; /* Ajusta tamaño del logo */
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.logo-link {
+  display: inline-block;
 }
 
 .header h1 {
@@ -19,9 +28,14 @@ body {
   color: var(--rojo-vibrante);
   text-transform: uppercase;
   margin: 0; /* quitar margen para mejor alineación */
+  flex-grow: 1; /* ocupa todo el espacio entre logo y menú */
 }
 
 /* Nuevo estilo para el menú de perfil */
+.menu-perfil {
+  margin-left: auto;
+}
+
 .menu-perfil a {
   color: var(--rojo-vibrante);
   font-weight: 700;

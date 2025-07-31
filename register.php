@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'php/conexion.php';
 include 'php/Header.php';
 

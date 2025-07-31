@@ -1,6 +1,6 @@
 <?php
+session_start();
 include 'php/conexion.php';
-include 'php/Header.php';
 
 $error = "";
 
@@ -35,6 +35,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->close();
     }
 }
+
+// Aquí incluir el Header para mostrar la página
+include 'php/Header.php';
 ?>
 
 <main class="registro-container">
