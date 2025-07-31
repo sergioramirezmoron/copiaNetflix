@@ -59,7 +59,7 @@ body {
 .info-portada .descripcion {
   font-size: 1.6rem;
   line-height: 1.4;
-  max-height: 6em; /* Limitamos altura para evitar overflow */
+  max-height: 6em;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -96,21 +96,40 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Responsive */
+/* ==================== RESPONSIVE ==================== */
 @media (max-width: 600px) {
   .portada {
     height: 300px;
   }
+
+  .info-portada {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    max-width: 90%;
+  }
+
   .info-portada h1 {
     font-size: 2.4rem;
   }
+
+  .info-portada .categoria {
+    font-size: 1.2rem;
+  }
+
   .info-portada .descripcion {
     font-size: 1.2rem;
   }
+
   .detalle {
     padding: 1rem;
   }
+
   .detalle h2 {
     font-size: 1.8rem;
+  }
+
+  .detalle ul {
+    font-size: 1.4rem;
   }
 }

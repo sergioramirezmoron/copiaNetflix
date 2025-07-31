@@ -1,5 +1,4 @@
-/* perfil.css */
-
+/* Encabezado */
 .perfil-header {
   background-color: var(--fondo-header);
   padding: 2rem 2rem;
@@ -13,6 +12,7 @@
   text-transform: uppercase;
 }
 
+/* Contenedor general */
 .perfil-container {
   display: flex;
   max-width: 1200px;
@@ -59,7 +59,7 @@
   cursor: default;
 }
 
-/* Sección de info personal */
+/* Información de perfil */
 .perfil-info {
   flex: 1;
   background-color: var(--fondo-card);

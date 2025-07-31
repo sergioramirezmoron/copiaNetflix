@@ -12,16 +12,16 @@
   text-transform: uppercase;
 }
 
-/* Registro */
+/* Formulario de Registro */
 .registro-container {
   background-color: var(--fondo-card);
-  padding: 2.5rem 2.8rem 6rem; /* espacio inferior para evitar solapamiento */
+  padding: 2.5rem 2.8rem 6rem;
   border-radius: var(--border-radius);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
   width: 340px;
   text-align: left;
   border: 1px solid var(--borde-card);
-  margin: 6rem auto 4rem; /* centra y da espacio arriba y abajo */
+  margin: 6rem auto 4rem;
   font-size: var(--font-size-text);
   position: relative;
   z-index: 1;
@@ -33,6 +33,7 @@ h1 {
   margin-bottom: 2rem;
 }
 
+/* Campos del formulario */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -56,6 +57,7 @@ input[type="password"]:focus {
   box-shadow: 0 0 5px var(--rojo-vibrante);
 }
 
+/* Botón */
 button {
   background-color: var(--rojo-vibrante);
   color: var(--blanco);
@@ -73,6 +75,7 @@ button:hover {
   background-color: var(--rojo-hover);
 }
 
+/* Mensajes de estado */
 .error {
   color: #ff5555;
   font-weight: 600;
@@ -85,6 +88,7 @@ button:hover {
   margin-bottom: 1rem;
 }
 
+/* Enlaces y texto auxiliar */
 p {
   margin-top: 1.5rem;
   color: var(--texto-secundario);

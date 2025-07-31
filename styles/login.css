@@ -15,15 +15,15 @@
 /* Login container */
 .registro-container {
   background-color: var(--fondo-card);
-  padding: 2.5rem 2.8rem 6rem; /* padding-bottom para espacio con el footer */
+  padding: 2.5rem 2.8rem 6rem;
   border-radius: var(--border-radius);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
   width: 340px;
   text-align: left;
   border: 1px solid var(--borde-card);
-  margin: 6rem auto 4rem; /* centrado horizontal y margen arriba y abajo */
+  margin: 6rem auto 4rem;
   font-size: var(--font-size-text);
-  position: relative; /* para evitar solapamientos */
+  position: relative;
   z-index: 1;
 }
 
@@ -91,4 +91,40 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 420px) {
+  .header {
+    padding: 1.5rem 1rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .registro-container {
+    width: 90%;
+    padding: 2rem 1.8rem 5rem;
+    margin: 4rem auto 3rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  button {
+    font-size: 1.05rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .error {
+    font-size: 0.95rem;
+    text-align: center;
+  }
 }
