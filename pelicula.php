@@ -53,3 +53,7 @@ $pelicula = $result->fetch_assoc();
 $stmt->close();
 $conn->close();
 ?>
+
+<?php
+include 'php/Footer.php';
+?>

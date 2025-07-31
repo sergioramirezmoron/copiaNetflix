@@ -22,6 +22,7 @@ $titulo_actual = $titulos[$current_page] ?? 'Mi Aplicación'; // título por def
   <link rel="stylesheet" href="styles/variables.css" />
   <link rel="stylesheet" href="styles/index.css" />
   <link rel="stylesheet" href="styles/pelicula.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
   <?php if($current_page === 'register.php'): ?>
     <link rel="stylesheet" href="styles/register.css" />
   <?php endif; ?>

@@ -29,4 +29,5 @@ $result = $conn->query($sql);
 
 <?php
 $conn->close();
+include 'php/Footer.php';
 ?>

@@ -96,3 +96,7 @@ include 'php/Header.php';
 </html>
 
 <?php $conn->close(); ?>
+
+<?php
+include 'php/Footer.php';
+?>

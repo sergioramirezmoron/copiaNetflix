@@ -60,3 +60,7 @@ include 'php/Header.php';
 
 </body>
 </html>
+
+<?php
+include 'php/Footer.php';
+?>
