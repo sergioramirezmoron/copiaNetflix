@@ -6,8 +6,8 @@ body {
 }
 
 .header {
-  text-align: center;
-  padding: 2rem 0;
+  text-align: left;
+  padding: 2rem 2rem;
   background-color: var(--fondo-header);
   border-bottom: 1px solid var(--gris-medio);
 }
@@ -15,6 +15,7 @@ body {
 .header h1 {
   font-size: 2.5rem;
   color: var(--rojo-vibrante);
+  text-transform: uppercase;
 }
 
 .galeria {

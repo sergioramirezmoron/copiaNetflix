@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 
     <form action="registro.php" method="post" novalidate>
-        <label for="usuario">Usuario:</label>
+        <label for="usuario">Nombre de usuario:</label>
         <input type="text" name="usuario" id="usuario" required value="<?php echo isset($_POST['usuario']) ? htmlspecialchars($_POST['usuario']) : ''; ?>">
 
         <label for="email">Correo electrónico:</label>
