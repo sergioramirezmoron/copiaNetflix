@@ -1,0 +1,116 @@
+/* Base */
+body {
+  margin: 0;
+  background-color: var(--fondo-general);
+  font-family: var(--font-family-base);
+  color: var(--texto-principal);
+}
+
+/* Contenedor principal */
+.pelicula-detalle {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+}
+
+/* Sección portada con imagen de fondo */
+.portada {
+  position: relative;
+  height: 450px;
+  border-radius: var(--border-radius);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+/* Capa overlay para oscurecer la imagen y mejorar legibilidad */
+.portada .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(18,18,18,0.75);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Texto dentro de la portada */
+.info-portada {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: var(--blanco);
+  max-width: 70%;
+}
+
+.info-portada h1 {
+  font-size: 3.6rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  line-height: 1.1;
+}
+
+.info-portada .categoria {
+  font-size: 1.4rem;
+  color: var(--gris-claro);
+  margin-bottom: 1rem;
+}
+
+.info-portada .descripcion {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  max-height: 6em; /* Limitamos altura para evitar overflow */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Sección detalle */
+.detalle {
+  margin-top: 3rem;
+  background-color: var(--fondo-card);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.detalle h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--rojo-vibrante);
+}
+
+.detalle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.detalle ul li {
+  margin-bottom: 0.8rem;
+  color: var(--texto-principal);
+}
+
+.detalle ul li strong {
+  color: var(--rojo-vibrante);
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .portada {
+    height: 300px;
+  }
+  .info-portada h1 {
+    font-size: 2.4rem;
+  }
+  .info-portada .descripcion {
+    font-size: 1.2rem;
+  }
+  .detalle {
+    padding: 1rem;
+  }
+  .detalle h2 {
+    font-size: 1.8rem;
+  }
+}

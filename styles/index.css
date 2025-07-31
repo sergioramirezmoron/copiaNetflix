@@ -61,6 +61,7 @@ body {
   margin: 0 auto;
 }
 
+/* Actualizamos .pelicula para enlaces <a> */
 .pelicula {
   background-color: var(--fondo-card);
   border-radius: var(--border-radius);
@@ -68,6 +69,9 @@ body {
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
+  text-decoration: none; /* quitar subrayado */
+  color: inherit; /* hereda color */
+  cursor: pointer;
 }
 
 .pelicula:hover {
