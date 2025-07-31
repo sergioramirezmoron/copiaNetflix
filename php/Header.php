@@ -9,6 +9,7 @@
   <?php if(basename($_SERVER['PHP_SELF']) == 'register.php'): ?>
     <link rel="stylesheet" href="styles/register.css" />
   <?php endif; ?>
+  <link rel="stylesheet" href="styles/login.css" />
 </head>
 <body>
 

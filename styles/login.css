@@ -1,0 +1,95 @@
+/* Header */
+.header {
+  text-align: left;
+  padding: 2rem 2rem;
+  background-color: var(--fondo-header);
+  border-bottom: 1px solid var(--gris-medio);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: var(--rojo-vibrante);
+  text-transform: uppercase;
+}
+
+/* Login container */
+.registro-container {
+  background-color: var(--fondo-card);
+  padding: 2.5rem 2.8rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  width: 340px;
+  text-align: left;
+  border: 1px solid var(--borde-card);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--font-size-text);
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: var(--rojo-vibrante);
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--gris-medio);
+  color: var(--blanco);
+  border: none;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: var(--border-radius);
+  font-size: 1.05rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: var(--gris-oscuro);
+  outline: none;
+  box-shadow: 0 0 5px var(--rojo-vibrante);
+}
+
+button {
+  background-color: var(--rojo-vibrante);
+  color: var(--blanco);
+  font-weight: 700;
+  padding: 0.85rem;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--rojo-hover);
+}
+
+.error {
+  color: #ff5555;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 1.5rem;
+  color: var(--texto-secundario);
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--rojo-vibrante);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
