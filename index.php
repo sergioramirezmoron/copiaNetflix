@@ -19,7 +19,6 @@ $result = $conn->query($sql);
       <div class="info">
         <h2><?php echo htmlspecialchars($pelicula['titulo']); ?></h2>
         <p class="categoria"><?php echo htmlspecialchars($pelicula['categoria']); ?> · <?php echo intval($pelicula['año']); ?></p>
-        <p class="descripcion"><?php echo htmlspecialchars($pelicula['descripcion']); ?></p>
       </div>
     </a>
   <?php endwhile; ?>

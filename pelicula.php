@@ -42,7 +42,6 @@ $pelicula = $result->fetch_assoc();
       <li><strong>Título:</strong> <?php echo htmlspecialchars($pelicula['titulo']); ?></li>
       <li><strong>Categoría:</strong> <?php echo htmlspecialchars($pelicula['categoria']); ?></li>
       <li><strong>Año:</strong> <?php echo intval($pelicula['año']); ?></li>
-      <li><strong>Descripción:</strong> <?php echo htmlspecialchars($pelicula['descripcion']); ?></li>
     </ul>
   </section>
 </main>
