@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (strlen($password) < 6) {
         $error = "La contraseña debe tener al menos 6 caracteres.";
     } else {
-        $stmt = $conn->prepare("SELECT id FROM usuarios WHERE usuario = ? OR email = ?");
+        $stmt = $conn->prepare("SELECT id FROM usuarios WHERE nombre = ? OR email = ?");
         $stmt->bind_param("ss", $usuario, $email);
         $stmt->execute();
         $stmt->store_result();
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $error = "El usuario o correo ya están registrados.";
         } else {
             $pass_hash = password_hash($password, PASSWORD_DEFAULT);
-            $insert = $conn->prepare("INSERT INTO usuarios (usuario, email, password) VALUES (?, ?, ?)");
+            $insert = $conn->prepare("INSERT INTO usuarios (nombre, email, contraseña) VALUES (?, ?, ?)");
             $insert->bind_param("sss", $usuario, $email, $pass_hash);
             if ($insert->execute()) {
                 $exito = "Usuario registrado correctamente. Puedes iniciar sesión.";
@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p class="exito"><?php echo htmlspecialchars($exito); ?></p>
     <?php endif; ?>
 
-    <form action="registro.php" method="post" novalidate>
+    <form action="register.php" method="post" novalidate>
         <label for="usuario">Nombre de usuario:</label>
         <input type="text" name="usuario" id="usuario" required value="<?php echo isset($_POST['usuario']) ? htmlspecialchars($_POST['usuario']) : ''; ?>">
 
