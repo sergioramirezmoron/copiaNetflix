@@ -1,25 +1,16 @@
 <?php
+include 'php/Header.php';
 include 'php/conexion.php';
 
 // Obtener todas las películas
 $sql = "SELECT * FROM peliculas";
 $result = $conn->query($sql);
+
+
 ?>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catálogo de Películas</title>
-  <link rel="stylesheet" href="styles/variables.css" />
-  <link rel="stylesheet" href="styles/index.css" />
-</head>
-<body>
-  <header class="header">
-    <h1>Catálogo de Películas</h1>
-  </header>
-
+        <header class="header">
+            <h1>Catálogo de Películas</h1>
+        </header>
   <main class="galeria">
     <?php while ($pelicula = $result->fetch_assoc()): ?>
       <div class="pelicula">
